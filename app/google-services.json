@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "351870905479",
+    "project_id": "unidecbase",
+    "storage_bucket": "unidecbase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351870905479:android:bd84d8c933ca10593d5c22",
+        "android_client_info": {
+          "package_name": "com.example.unidec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351870905479-3uacjot695bkavtehpia7atgaiegj94c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPx0lce_tSeTF2yffvp8drqlhjJZaoNWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351870905479-3uacjot695bkavtehpia7atgaiegj94c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        app:lottie_rawRes="@raw/deco3"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anima"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_rawRes="@raw/usser"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@+id/anima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:id="@+id/usserEd"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconDrawable="@drawable/ic_baseline_person_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usrEd"
+            android:layout_width="200dp"
+            android:layout_height="50dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_below="@+id/usserEd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:id="@+id/passwEd"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconDrawable="@drawable/ic_baseline_https_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passEd"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/goBtn"
+        android:onClick="goBt"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/passwEd"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Go"
+        android:background="@drawable/round2" />
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/progressB"
+        android:layout_below="@+id/goBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:lottie_rawRes="@raw/progres"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:visibility="invisible"/>
+    <TextView
+        android:onClick="reBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="10dp" />
+</RelativeLayout>
